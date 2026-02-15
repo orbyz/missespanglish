@@ -4,6 +4,30 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "../globals.css";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    metadataBase: new URL("https://miss-espanglish.vercel.app"),
+    title: t("title"),
+    description: t("description"),
+    icons: {
+      icon: "/favicon.ico", // Esto hará que tu logo sea el favicon (el icono de la pestaña)
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      images: ["/hero-illustration.jpeg"], // Imagen que sale al compartir por WhatsApp/RRSS
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
