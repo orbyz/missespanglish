@@ -1,13 +1,20 @@
 import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
-  // Lista de todos los idiomas soportados
+  // Idiomas soportados
   locales: ["en", "es"],
-  // Idioma por defecto si no hay ninguno en la URL
+
+  // Idioma por defecto si no hay coincidencia
   defaultLocale: "es",
 });
 
 export const config = {
-  // Machaca todas las rutas excepto las internas de Next.js (_next), archivos (favicon, etc)
-  matcher: ["/", "/(es|en)/:path*"],
+  // Este matcher es CRUCIAL.
+  // Debe incluir '/' para que la raíz no de 404
+  matcher: [
+    "/",
+    "/(es|en)/:path*",
+    // Esto excluye archivos internos de Next.js y estáticos
+    "/((?!_next|_vercel|.*\\..*).*)",
+  ],
 };
