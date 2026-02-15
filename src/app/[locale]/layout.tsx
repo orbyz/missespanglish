@@ -15,7 +15,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    metadataBase: new URL("https://miss-espanglish.vercel.app"),
+    metadataBase: new URL("https://missespanglish.com"),
     title: t("title"),
     description: t("description"),
     icons: {
