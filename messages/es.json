@@ -1,0 +1,32 @@
+{
+  "Index": {
+    "title": "Aprende Inglés y Español",
+    "subtitle": "con un metodo que realmente funciona.",
+    "paragraph": "Clases personalizadas en Valencia para estudiantes y profesionales. Sin libros aburridos, solo conversación real.",
+    "buttonPrimary": "Ver clases disponibles",
+    "buttonSecondary": "Chat por WhatsApp",
+    "featuresTitle": "Por qué aprender conmigo",
+    "feat1Title": "Conversación Real",
+    "feat1Desc": "Olvídate de rellenar huecos. Hablamos desde el primer minuto sobre temas que te interesan.",
+    "feat2Title": "Plan Personalizado",
+    "feat2Desc": "Diseño cada sesión según tus objetivos, ya sea para el trabajo, un examen o un viaje.",
+    "feat3Title": "Horarios Flexibles",
+    "feat3Desc": "Adaptamos las clases a tu ritmo de vida para que aprender un idioma no sea una carga.",
+    "aboutTitle": "Hola, soy Andreina",
+    "aboutText1": "Llevo años ayudando a personas como tú a perder el miedo a hablar un nuevo idioma. Mi enfoque no se basa en libros de texto antiguos, sino en el uso real de la lengua en el día a día.",
+    "aboutText2": "Ya sea porque necesitas el inglés para tu carrera profesional en Valencia o porque quieres viajar y conectar con gente nueva, estoy aquí para guiarte en cada paso del camino.",
+    "aboutButton": "Más sobre mi método",
+    "ctaTitle": "¿Empezamos a hablar?",
+    "ctaSubtitle": "Reserva tu primera sesión de prueba o escríbeme para resolver cualquier duda. ¡Estaré encantada de ayudarte!",
+    "ctaButton": "Contactar por WhatsApp"
+  },
+  "Footer": {
+    "description": "Clases de inglés y español que realmente funcionan. Valencia y Online.",
+    "navTitle": "Navegación",
+    "home": "Inicio",
+    "methodology": "Metodología",
+    "about": "Sobre mí",
+    "socialTitle": "Redes Sociales",
+    "rights": "Todos los derechos reservados."
+  }
+}

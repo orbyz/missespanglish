@@ -1,0 +1,32 @@
+{
+  "Index": {
+    "title": "Learn English & Spanish",
+    "subtitle": "with a method that actually works",
+    "paragraph": "Personalized classes in Valencia for students and professionals. No boring textbooks, just real conversation.",
+    "buttonPrimary": "See available classes",
+    "buttonSecondary": "Chat on WhatsApp",
+    "featuresTitle": "Why learn with me",
+    "feat1Title": "Real Conversation",
+    "feat1Desc": "Forget about filling in the blanks. We talk from minute one about topics you care about.",
+    "feat2Title": "Personalized Plan",
+    "feat2Desc": "I design each session based on your goals, whether for work, an exam, or travel.",
+    "feat3Title": "Flexible Schedule",
+    "feat3Desc": "We adapt the classes to your lifestyle so learning a language isn't a burden.",
+    "aboutTitle": "Hi, I'm Andreina",
+    "aboutText1": "I've spent years helping people like you lose the fear of speaking a new language. My approach isn't based on old textbooks, but on real language use in everyday life.",
+    "aboutText2": "Whether you need English for your professional career in Valencia or you want to travel and connect with new people, I'm here to guide you every step of the way.",
+    "aboutButton": "More about my method",
+    "ctaTitle": "Shall we start talking?",
+    "ctaSubtitle": "Book your first trial session or write to me with any questions. I'll be happy to help!",
+    "ctaButton": "Contact via WhatsApp"
+  },
+  "Footer": {
+    "description": "English and Spanish lessons that actually work. Valencia & Online.",
+    "navTitle": "Navigation",
+    "home": "Home",
+    "methodology": "Methodology",
+    "about": "About Me",
+    "socialTitle": "Social Media",
+    "rights": "All rights reserved."
+  }
+}
