@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function AboutMe() {
-const t = useTranslations("Index");
+  const t = useTranslations("Index");
 
-    return (
+  return (
     <section className="bg-brand-cream py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
         {/* Contenedor de Imagen con el Rombo de fondo */}
@@ -46,4 +46,5 @@ const t = useTranslations("Index");
         </div>
       </div>
     </section>
-)
+  );
+}
