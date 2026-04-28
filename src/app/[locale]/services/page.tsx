@@ -1,17 +1,17 @@
-import ServicesHero from "@/components/sections/ServicesHero";
-import ServicesList from "@/components/sections/ServicesList";
-import Methodology from "@/components/sections/Methodology";
-import PricingPreview from "@/components/sections/PricingPreview";
-import CTA from "@/components/sections/CTA";
+import ServicesHero from "@/components/sections/services/ServicesHero";
+import ServicesGrid from "@/components/sections/services/ServicesGrid";
+import ServicesProcess from "@/components/sections/services/ServicesProcess";
+import ServicesBenefits from "@/components/sections/services/ServicesBenefits";
+import ServicesCTA from "@/components/sections/services/ServicesCTA";
 
-export default function ServiciosPage() {
+export default function ServicesPage() {
   return (
-    <>
+    <main>
       <ServicesHero />
-      <ServicesList />
-      <Methodology />
-      <PricingPreview />
-      <CTA />
-    </>
+      <ServicesGrid />
+      <ServicesProcess />
+      <ServicesBenefits />
+      <ServicesCTA />
+    </main>
   );
 }

@@ -1,0 +1,112 @@
+{
+  "Metadata": {
+    "title": "Miss Espanglish",
+    "description": "Clases de idiomas"
+  },
+  "Index": {
+    "title": "Aprende inglés y español de forma divertida",
+    "subtitle": "Clases para niños y adolescentes"
+  },
+  "Footer": {
+    "description": "Aprendizaje de idiomas divertido y personalizado.",
+    "navTitle": "Navegación",
+    "home": "Inicio",
+    "methodology": "Metodología",
+    "about": "Sobre nosotros",
+    "socialTitle": "Síguenos",
+    "rights": "Todos los derechos reservados"
+  },
+  "services": {
+    "hero": {
+      "title": "Clases de inglés y español que sí disfrutan los niños",
+      "highlight": "disfrutan",
+      "subtitle": "Aprendizaje divertido, bilingüe y adaptado a cada edad.",
+      "ctaPrimary": "Reservar clase",
+      "ctaSecondary": "Cómo funciona",
+      "badge": "Clases personalizadas"
+    },
+    "grid": {
+      "title": "Servicios",
+      "subtitle": "Clases adaptadas a cada estudiante",
+      "items": {
+        "personalized": {
+          "title": "Clases personalizadas",
+          "description": "Atención 1 a 1 adaptada al estudiante",
+          "bullets": ["Plan individual", "Mejora rápida", "Speaking"],
+          "cta": "Reservar clase",
+          "badge": "Más recomendado"
+        },
+        "school-support": {
+          "title": "Apoyo escolar",
+          "description": "Ayuda con tareas",
+          "bullets": ["Refuerzo", "Explicaciones", "Mejores notas"],
+          "cta": "Ver más"
+        },
+        "exam-prep": {
+          "title": "Preparación de exámenes",
+          "description": "Preparación enfocada",
+          "bullets": ["Simulacros", "Técnicas", "Intensivo"],
+          "cta": "Comenzar"
+        }
+      }
+    },
+    "process": {
+      "title": "¿Cómo funcionan las clases?",
+      "subtitle": "Un proceso claro y adaptado a cada estudiante",
+      "steps": {
+        "step1": {
+          "title": "Evaluación inicial",
+          "description": "Analizamos el nivel y necesidades del estudiante"
+        },
+        "step2": {
+          "title": "Plan personalizado",
+          "description": "Diseñamos un enfoque adaptado a su ritmo"
+        },
+        "step3": {
+          "title": "Clases dinámicas",
+          "description": "Aprendizaje interactivo con juegos y conversación"
+        },
+        "step4": {
+          "title": "Seguimiento",
+          "description": "Monitoreamos el progreso continuamente"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Resultados que los padres valoran",
+      "subtitle": "Más que clases, un proceso que impulsa la confianza y el aprendizaje real",
+      "items": {
+        "b1": {
+          "title": "Mejora académica visible",
+          "description": "Refuerzo constante reflejado en el rendimiento escolar"
+        },
+        "b2": {
+          "title": "Confianza al hablar",
+          "description": "Los niños pierden el miedo y se expresan con naturalidad"
+        },
+        "b3": {
+          "title": "Clases dinámicas y entretenidas",
+          "description": "Aprenden sin aburrirse gracias a métodos interactivos"
+        },
+        "b4": {
+          "title": "Seguimiento personalizado",
+          "description": "Cada estudiante progresa a su ritmo"
+        }
+      },
+      "card": {
+        "title": "Aprendizaje que se nota",
+        "description": "Cada clase está diseñada para generar progreso real, no solo teoría",
+        "stat1": "Más del 90% mejora su confianza",
+        "stat2": "Clases adaptadas a cada edad"
+      }
+    },
+    "cta": {
+      "title": "Reserva una clase y descubre cómo tu hijo puede aprender disfrutando",
+      "highlight": "disfrutando",
+      "subtitle": "Primera clase enfocada en conocer el nivel y crear un plan adaptado",
+      "primary": "Reservar clase de prueba",
+      "secondary": "Hablar por WhatsApp",
+      "trust": "Sin compromiso · Personalizado · Clases dinámicas"
+    }
+  }
+}

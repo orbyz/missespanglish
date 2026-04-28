@@ -1,0 +1,112 @@
+{
+  "Metadata": {
+    "title": "Miss Espanglish",
+    "description": "Language classes"
+  },
+  "Index": {
+    "title": "Learn English and Spanish in a fun way",
+    "subtitle": "Classes designed for kids and teenagers"
+  },
+  "Footer": {
+    "description": "Fun and personalized language learning.",
+    "navTitle": "Navigation",
+    "home": "Home",
+    "methodology": "Methodology",
+    "about": "About",
+    "socialTitle": "Follow us",
+    "rights": "All rights reserved"
+  },
+  "services": {
+    "hero": {
+      "title": "English and Spanish classes that kids actually enjoy",
+      "highlight": "enjoy",
+      "subtitle": "Fun, bilingual learning adapted to each age.",
+      "ctaPrimary": "Book a class",
+      "ctaSecondary": "How it works",
+      "badge": "Personalized classes"
+    },
+    "grid": {
+      "title": "Services",
+      "subtitle": "Classes adapted to each student",
+      "items": {
+        "personalized": {
+          "title": "Personalized classes",
+          "description": "1-on-1 attention adapted to each student",
+          "bullets": ["Individual plan", "Fast improvement", "Speaking focus"],
+          "cta": "Book class",
+          "badge": "Recommended"
+        },
+        "school-support": {
+          "title": "School support",
+          "description": "Homework help and reinforcement",
+          "bullets": ["Weekly support", "Clear explanations", "Better grades"],
+          "cta": "See more"
+        },
+        "exam-prep": {
+          "title": "Exam preparation",
+          "description": "Focused training to pass exams",
+          "bullets": ["Mock exams", "Techniques", "Intensive training"],
+          "cta": "Start"
+        }
+      }
+    },
+    "process": {
+      "title": "How do the classes work?",
+      "subtitle": "A clear and structured process adapted to each student",
+      "steps": {
+        "step1": {
+          "title": "Initial assessment",
+          "description": "We analyze the student's level and needs"
+        },
+        "step2": {
+          "title": "Personalized plan",
+          "description": "We design a tailored learning approach"
+        },
+        "step3": {
+          "title": "Dynamic classes",
+          "description": "Interactive learning with games and conversation"
+        },
+        "step4": {
+          "title": "Progress tracking",
+          "description": "We monitor progress continuously"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Results that parents value",
+      "subtitle": "More than classes, a process that builds confidence and real progress",
+      "items": {
+        "b1": {
+          "title": "Visible academic improvement",
+          "description": "Consistent reinforcement reflected in school performance"
+        },
+        "b2": {
+          "title": "Confidence when speaking",
+          "description": "Kids lose fear and express themselves naturally"
+        },
+        "b3": {
+          "title": "Fun and engaging classes",
+          "description": "Interactive learning without boredom"
+        },
+        "b4": {
+          "title": "Personalized follow-up",
+          "description": "Each student progresses at their own pace"
+        }
+      },
+      "card": {
+        "title": "Learning that shows",
+        "description": "Each class is designed to create real progress, not just theory",
+        "stat1": "90%+ confidence improvement",
+        "stat2": "Classes adapted to each age"
+      }
+    },
+    "cta": {
+      "title": "Book a class and see how your child can learn while enjoying it",
+      "highlight": "enjoying",
+      "subtitle": "First class focused on understanding the level and creating a personalized plan",
+      "primary": "Book trial class",
+      "secondary": "Chat on WhatsApp",
+      "trust": "No commitment · Personalized · Fun classes"
+    }
+  }
+}
