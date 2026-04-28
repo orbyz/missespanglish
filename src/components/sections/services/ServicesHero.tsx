@@ -8,7 +8,7 @@ export default function ServicesHero() {
   const t = useTranslations("services.hero");
 
   return (
-    <section className="relative overflow-hidden py-20 md:py-28 bg-brand-cream">
+    <section className="relative overflow-hidden pt-20 md:pt-24 pb-20 md:pb-28 bg-brand-cream">
       {/* 🎨 BACKGROUND BLOBS */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-[-80px] left-[-60px] w-[280px] h-[280px] bg-brand-primary/10 rounded-full blur-3xl" />

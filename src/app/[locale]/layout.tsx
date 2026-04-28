@@ -45,12 +45,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="bg-hero-gradient">
+      <body className="bg-brand-cream">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
 
           {/* 🔥 AQUÍ VA EL MAIN */}
-          <main id="main-content" className="min-h-screen pt-20">
+          <main id="main-content" className="min-h-screen">
             {children}
           </main>
 

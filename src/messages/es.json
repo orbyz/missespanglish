@@ -5,16 +5,146 @@
   },
   "Index": {
     "title": "Aprende inglés y español de forma divertida",
-    "subtitle": "Clases para niños y adolescentes"
+    "subtitle": "Clases diseñadas para niños y adolescentes",
+    "paragraph": "Clases dinámicas, interactivas y personalizadas adaptadas al nivel de cada estudiante.",
+
+    "buttonPrimary": "Reservar clase",
+    "buttonSecondary": "Ver cómo funciona",
+
+    "buttonTrial": "Clase gratuita",
+    "trialNote": "Reserva en 30 segundos • Sin compromiso",
+
+    "featuresTitle": "¿Por qué elegir Miss Espanglish?",
+
+    "feat1Title": "Clases divertidas",
+    "feat1Desc": "Aprendizaje dinámico con juegos y actividades interactivas.",
+
+    "feat2Title": "Enfoque personalizado",
+    "feat2Desc": "Cada estudiante aprende a su ritmo con atención individual.",
+
+    "feat3Title": "Resultados reales",
+    "feat3Desc": "Mejora visible en confianza y rendimiento académico.",
+
+    "aboutTitle": "Sobre Miss Espanglish",
+    "aboutText1": "Soy profesora apasionada por enseñar idiomas de forma cercana y divertida.",
+    "aboutText2": "Mi objetivo es que los niños aprendan sin miedo y disfruten el proceso.",
+    "aboutButton": "Conocer más",
+
+    "ctaTitle": "Empieza hoy mismo",
+    "ctaSubtitle": "Reserva una clase y descubre una forma divertida de aprender idiomas",
+    "ctaPrimary": "Reservar clase",
+    "ctaWhatsapp": "Hablar por WhatsApp",
+    "ctaTrust": "Respuesta en menos de 24 horas · Sin compromiso"
+  },
+  "about": {
+    "hero": {
+      "title": "Hola, soy Miss Espanglish",
+      "subtitle": "Profesora apasionada por enseñar idiomas de forma divertida"
+    },
+    "story": {
+      "title": "Mi historia",
+      "p1": "Desde siempre he creído que aprender un idioma debe ser una experiencia divertida.",
+      "p2": "Por eso creé un método basado en confianza, juegos y comunicación real."
+    },
+    "trust": {
+      "title": "¿Por qué confiar en mí?",
+      "t1": {
+        "title": "Experiencia",
+        "desc": "Años enseñando a niños y adolescentes"
+      },
+      "t2": {
+        "title": "Metodología",
+        "desc": "Clases dinámicas y personalizadas"
+      },
+      "t3": {
+        "title": "Resultados",
+        "desc": "Mejora real en confianza y nivel"
+      }
+    },
+    "values": {
+      "title": "¿Por qué confiar en mí?",
+      "v1": {
+        "title": "Experiencia",
+        "desc": "Años enseñando a niños y adolescentes"
+      },
+      "v2": {
+        "title": "Metodología",
+        "desc": "Clases dinámicas y personalizadas"
+      },
+      "v3": {
+        "title": "Resultados",
+        "desc": "Mejora real en confianza y nivel"
+      }
+    }
+  },
+  "methodology": {
+    "hero": {
+      "title": "Una metodología diseñada para que los niños disfruten aprendiendo",
+      "subtitle": "Aprender un idioma no tiene que ser aburrido ni difícil"
+    },
+    "process": {
+      "title": "Cómo funcionan las clases",
+      "subtitle": "Un proceso claro adaptado a cada estudiante",
+      "steps": {
+        "step1": {
+          "title": "Evaluación",
+          "description": "Analizamos nivel y necesidades"
+        },
+        "step2": {
+          "title": "Plan",
+          "description": "Diseñamos clases personalizadas"
+        },
+        "step3": {
+          "title": "Clases dinámicas",
+          "description": "Aprendizaje con juegos y conversación"
+        },
+        "step4": {
+          "title": "Seguimiento",
+          "description": "Medimos progreso continuo"
+        },
+        "step5": {
+          "title": "Resultados visibles",
+          "description": "El estudiante gana confianza y mejora su nivel de forma natural"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Resultados reales",
+      "b1": {
+        "title": "Más confianza",
+        "desc": "Pierden el miedo a hablar"
+      },
+      "b2": {
+        "title": "Mejores notas",
+        "desc": "Refuerzo académico efectivo"
+      },
+      "b3": {
+        "title": "Motivación",
+        "desc": "Disfrutan aprender idiomas"
+      }
+    }
   },
   "Footer": {
     "description": "Aprendizaje de idiomas divertido y personalizado.",
     "navTitle": "Navegación",
     "home": "Inicio",
+    "services": "Servicios",
     "methodology": "Metodología",
-    "about": "Sobre nosotros",
+    "about": "Sobre mí",
     "socialTitle": "Síguenos",
-    "rights": "Todos los derechos reservados"
+    "rights": "Todos los derechos reservados",
+
+    "ctaTitle": "¿Listo para empezar?",
+    "ctaSubtitle": "Reserva tu primera clase o escríbenos por WhatsApp",
+    "ctaPrimary": "Ver servicios",
+    "ctaWhatsapp": "Hablar por WhatsApp"
+  },
+  "Navbar": {
+    "services": "Servicios",
+    "methodology": "Metodología",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Reservar"
   },
   "services": {
     "hero": {

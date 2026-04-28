@@ -5,16 +5,146 @@
   },
   "Index": {
     "title": "Learn English and Spanish in a fun way",
-    "subtitle": "Classes designed for kids and teenagers"
+    "subtitle": "Classes designed for kids and teenagers",
+    "paragraph": "Interactive, dynamic and personalized lessons adapted to each student’s level.",
+
+    "buttonPrimary": "Book a class",
+    "buttonSecondary": "See how it works",
+
+    "buttonTrial": "Free trial class",
+    "trialNote": "Book in 30 seconds • No commitment",
+
+    "featuresTitle": "Why choose Miss Espanglish?",
+
+    "feat1Title": "Fun classes",
+    "feat1Desc": "Dynamic learning with games and interactive activities.",
+
+    "feat2Title": "Personalized approach",
+    "feat2Desc": "Each student learns at their own pace with individual attention.",
+
+    "feat3Title": "Real results",
+    "feat3Desc": "Visible improvement in confidence and academic performance.",
+
+    "aboutTitle": "About Miss Espanglish",
+    "aboutText1": "I am passionate about teaching languages in a fun and close way.",
+    "aboutText2": "My goal is for kids to learn without fear and enjoy the process.",
+    "aboutButton": "Learn more",
+
+    "ctaTitle": "Start today",
+    "ctaSubtitle": "Book a class and discover a fun way to learn languages",
+    "ctaPrimary": "Book a class",
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaTrust": "Response within 24 hours · No commitment"
+  },
+  "about": {
+    "hero": {
+      "title": "Hi, I'm Miss Espanglish",
+      "subtitle": "A passionate teacher focused on fun language learning"
+    },
+    "story": {
+      "title": "My story",
+      "p1": "I have always believed that learning a language should be fun.",
+      "p2": "That’s why I created a method based on confidence, games and real communication."
+    },
+    "trust": {
+      "title": "Why trust me?",
+      "t1": {
+        "title": "Experience",
+        "desc": "Years teaching kids and teenagers"
+      },
+      "t2": {
+        "title": "Methodology",
+        "desc": "Dynamic and personalized classes"
+      },
+      "t3": {
+        "title": "Results",
+        "desc": "Real improvement in confidence and level"
+      }
+    },
+    "values": {
+      "title": "Why trust me?",
+      "v1": {
+        "title": "Experience",
+        "desc": "Years teaching kids and teenagers"
+      },
+      "v2": {
+        "title": "Methodology",
+        "desc": "Dynamic and personalized classes"
+      },
+      "v3": {
+        "title": "Results",
+        "desc": "Real improvement in confidence and level"
+      }
+    }
+  },
+  "methodology": {
+    "hero": {
+      "title": "A methodology designed for kids to enjoy learning",
+      "subtitle": "Learning a language doesn’t have to be boring or difficult"
+    },
+    "process": {
+      "title": "How the classes work",
+      "subtitle": "A clear process adapted to each student",
+      "steps": {
+        "step1": {
+          "title": "Assessment",
+          "description": "We evaluate the student's level and needs"
+        },
+        "step2": {
+          "title": "Plan",
+          "description": "We design personalized lessons"
+        },
+        "step3": {
+          "title": "Dynamic classes",
+          "description": "Learning through games and conversation"
+        },
+        "step4": {
+          "title": "Progress tracking",
+          "description": "We monitor progress continuously"
+        },
+        "step5": {
+          "title": "Visible results",
+          "description": "The student gains confidence and improves naturally"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Real results",
+      "b1": {
+        "title": "More confidence",
+        "desc": "Students lose the fear of speaking"
+      },
+      "b2": {
+        "title": "Better grades",
+        "desc": "Effective academic reinforcement"
+      },
+      "b3": {
+        "title": "Motivation",
+        "desc": "They enjoy learning languages"
+      }
+    }
   },
   "Footer": {
     "description": "Fun and personalized language learning.",
     "navTitle": "Navigation",
     "home": "Home",
+    "services": "Services",
     "methodology": "Methodology",
     "about": "About",
     "socialTitle": "Follow us",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+
+    "ctaTitle": "Ready to get started?",
+    "ctaSubtitle": "Book your first class or chat with us on WhatsApp",
+    "ctaPrimary": "View services",
+    "ctaWhatsapp": "Chat on WhatsApp"
+  },
+  "Navbar": {
+    "services": "Services",
+    "methodology": "Methodology",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Book"
   },
   "services": {
     "hero": {

@@ -1,93 +1,62 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+
+const features = [
+  { id: 1, icon: "🎯" },
+  { id: 2, icon: "📚" },
+  { id: 3, icon: "🚀" },
+];
 
 export default function Features() {
   const t = useTranslations("Index");
 
   return (
-    <section className="bg-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-brand-dark text-center mb-16">
-          {t("featuresTitle")}
-        </h2>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* HEADER */}
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-brand-dark">
+            {t("featuresTitle")}
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Tarjeta 1 */}
-          <div className="group p-8 rounded-3xl bg-brand-cream border border-brand-primary/10 hover:border-brand-accent/30 transition-all hover:shadow-xl">
-            <div className="w-14 h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center mb-6 text-brand-accent">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-brand-dark mb-4">
-              {t("feat1Title")}
-            </h3>
-            <p className="text-brand-dark/70 leading-relaxed">
-              {t("feat1Desc")}
-            </p>
-          </div>
+        {/* GRID */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((f, i) => {
+            const title = t(`feat${f.id}Title`);
+            const desc = t(`feat${f.id}Desc`);
 
-          {/* Tarjeta 2 */}
-          <div className="group p-8 rounded-3xl bg-brand-cream border border-brand-primary/10 hover:border-brand-accent/30 transition-all hover:shadow-xl">
-            <div className="w-14 h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center mb-6 text-brand-accent">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            return (
+              <motion.div
+                key={f.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-2"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-brand-dark mb-4">
-              {t("feat2Title")}
-            </h3>
-            <p className="text-brand-dark/70 leading-relaxed">
-              {t("feat2Desc")}
-            </p>
-          </div>
+                {/* ICON */}
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-brand-primary/10 text-2xl mb-6 group-hover:scale-110 transition">
+                  {f.icon}
+                </div>
 
-          {/* Tarjeta 3 */}
-          <div className="group p-8 rounded-3xl bg-brand-cream border border-brand-primary/10 hover:border-brand-accent/30 transition-all hover:shadow-xl">
-            <div className="w-14 h-14 bg-brand-accent/10 rounded-2xl flex items-center justify-center mb-6 text-brand-accent">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-brand-dark mb-4">
-              {t("feat3Title")}
-            </h3>
-            <p className="text-brand-dark/70 leading-relaxed">
-              {t("feat3Desc")}
-            </p>
-          </div>
+                {/* TITLE */}
+                <h3 className="text-xl font-semibold text-brand-dark mb-3 group-hover:text-brand-primary transition">
+                  {title}
+                </h3>
+
+                {/* DESC */}
+                <p className="text-brand-dark/70 leading-relaxed text-sm">
+                  {desc}
+                </p>
+
+                {/* subtle glow */}
+                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 bg-brand-primary/5 transition pointer-events-none" />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
