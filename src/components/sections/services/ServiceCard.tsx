@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { Service } from "./types";
+import { CONTACT } from "@/lib/constants/contact";
 
 type Props = {
   service: Service;
@@ -48,12 +49,15 @@ export default function ServiceCard({ service }: Props) {
 
       {/* 🚀 CTA */}
       <button
-        className={clsx(
-          "mt-6 w-full rounded-xl py-2 text-sm font-medium transition-all",
+        onClick={() => window.open(CONTACT.calendly, "_blank")}
+        className={`mt-6 w-full px-6 py-3 rounded-xl font-semibold text-base shadow-md transition-all duration-300
+        hover:scale-[1.05] active:scale-[0.96]
+        ${
           service.featured
-            ? "bg-brand-primary text-white hover:opacity-90"
-            : "bg-gray-100 hover:bg-gray-200",
-        )}
+            ? "bg-white text-brand-primary hover:bg-brand-primary hover:text-white border border-white"
+            : "bg-brand-primary text-white hover:bg-white hover:text-brand-primary border border-brand-primary"
+        }
+        `}
       >
         {service.cta}
       </button>

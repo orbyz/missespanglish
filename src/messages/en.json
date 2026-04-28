@@ -79,32 +79,33 @@
   },
   "methodology": {
     "hero": {
-      "title": "A methodology designed for kids to enjoy learning",
-      "subtitle": "Learning a language doesn’t have to be boring or difficult"
+      "title": "How we help your child actually learn",
+      "subtitle": "A proven method combining fun, practice and real progress tracking"
     },
     "process": {
       "title": "How the classes work",
       "subtitle": "A clear process adapted to each student",
       "steps": {
-        "step1": {
-          "title": "Assessment",
-          "description": "We evaluate the student's level and needs"
-        },
-        "step2": {
-          "title": "Plan",
-          "description": "We design personalized lessons"
-        },
-        "step3": {
-          "title": "Dynamic classes",
-          "description": "Learning through games and conversation"
-        },
-        "step4": {
-          "title": "Progress tracking",
-          "description": "We monitor progress continuously"
-        },
-        "step5": {
-          "title": "Visible results",
-          "description": "The student gains confidence and improves naturally"
+          "step1": {
+            "title": "We understand their level and needs",
+            "description": "Every child is different, so we start with a personalized assessment"
+          },
+          "step2": {
+            "title": "We create a tailored plan",
+            "description": "Lessons designed around their pace, goals, and learning style"
+          },
+          "step3": {
+            "title": "They learn by playing and speaking",
+            "description": "Interactive classes where they participate, have fun, and build confidence"
+          },
+          "step4": {
+            "title": "We track their progress",
+            "description": "We measure real improvement and adjust to keep them moving forward"
+          },
+          "step5": {
+            "title": "Visible results",
+            "description": "More confidence, better level, and motivation to keep learning"
+          }
         }
       }
     },

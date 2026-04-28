@@ -80,32 +80,32 @@
   },
   "methodology": {
     "hero": {
-      "title": "Una metodología diseñada para que los niños disfruten aprendiendo",
-      "subtitle": "Aprender un idioma no tiene que ser aburrido ni difícil"
+      "title": "Cómo ayudamos a tu hijo a aprender de verdad",
+      "subtitle": "Un método probado que combina diversión, práctica y seguimiento real"
     },
     "process": {
       "title": "Cómo funcionan las clases",
       "subtitle": "Un proceso claro adaptado a cada estudiante",
       "steps": {
         "step1": {
-          "title": "Evaluación",
-          "description": "Analizamos nivel y necesidades"
+          "title": "Entendemos su nivel y necesidades",
+          "description": "Cada niño es diferente, por eso empezamos con una evaluación personalizada"
         },
         "step2": {
-          "title": "Plan",
-          "description": "Diseñamos clases personalizadas"
+          "title": "Creamos un plan adaptado",
+          "description": "Diseñamos clases según su ritmo, objetivos y forma de aprender"
         },
         "step3": {
-          "title": "Clases dinámicas",
-          "description": "Aprendizaje con juegos y conversación"
+          "title": "Aprende jugando y hablando",
+          "description": "Clases dinámicas donde participa, se divierte y gana confianza"
         },
         "step4": {
-          "title": "Seguimiento",
-          "description": "Medimos progreso continuo"
+          "title": "Seguimos su progreso",
+          "description": "Medimos avances reales y ajustamos para mejorar continuamente"
         },
         "step5": {
           "title": "Resultados visibles",
-          "description": "El estudiante gana confianza y mejora su nivel de forma natural"
+          "description": "Más confianza, mejor nivel y ganas de seguir aprendiendo"
         }
       }
     },
