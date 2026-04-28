@@ -8,4 +8,11 @@ export type Service = {
   badge?: string;
 };
 
+<<<<<<< HEAD
 export type ServiceItem = Pick<Service, "id" | "featured">;
+=======
+export type ServiceItem = {
+  id: string;
+  featured?: boolean;
+};
+>>>>>>> fix/navbar

@@ -5,12 +5,14 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { CONTACT } from "@/lib/constants/contact";
+import { useState } from "react";
 
 export default function Navbar() {
   const locale = useLocale();
   const t = useTranslations("Navbar");
   const router = useRouter();
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
   const toggleLanguage = () => {
     const nextLocale = locale === "es" ? "en" : "es";
@@ -24,72 +26,150 @@ export default function Navbar() {
     window.open(`https://wa.me/${CONTACT.whatsapp}?text=${message}`, "_blank");
   };
 
+  const handleCalendly = () => {
+    window.open(CONTACT.calendly, "_blank");
+  };
+
   return (
-    <nav className="flex items-center justify-between px-6 md:px-12 py-4 bg-white/70 backdrop-blur-md sticky top-0 z-50 border-b border-brand-primary/10">
-      {/* LOGO */}
-      <Link
-        href={`/${locale}`}
-        className="relative h-12 w-40 transition-transform hover:scale-105"
-      >
-        <Image
-          src="/logo.svg"
-          alt="Miss Espanglish Logo"
-          width={260}
-          height={60}
-          className="object-contain object-left"
-          priority
-        />
-      </Link>
-
-      {/* NAV LINKS */}
-      <div className="hidden md:flex items-center gap-8 text-sm font-medium text-brand-dark">
+    <>
+      <nav className="flex items-center justify-between px-6 md:px-12 py-4 bg-white/70 backdrop-blur-md sticky top-0 z-50 border-b border-brand-primary/10">
+        {/* LOGO */}
         <Link
-          href={`/${locale}/services`}
-          className="hover:text-brand-primary transition"
+          href={`/${locale}`}
+          className="relative h-12 w-40 transition-transform hover:scale-105 z-50"
         >
-          {t("services")}
+          <Image
+            src="/logo.svg"
+            alt="Miss Espanglish Logo"
+            width={260}
+            height={60}
+            className="object-contain object-left"
+            priority
+          />
         </Link>
 
-        <Link
-          href={`/${locale}/methodology`}
-          className="hover:text-brand-primary transition"
-        >
-          {t("methodology")}
-        </Link>
+        {/* DESKTOP NAV */}
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-brand-dark">
+          <Link
+            href={`/${locale}/services`}
+            className="hover:text-brand-primary transition"
+          >
+            {t("services")}
+          </Link>
 
-        <Link
-          href={`/${locale}/about`}
-          className="hover:text-brand-primary transition"
-        >
-          {t("about")}
-        </Link>
+          <Link
+            href={`/${locale}/methodology`}
+            className="hover:text-brand-primary transition"
+          >
+            {t("methodology")}
+          </Link>
 
-        <button
-          onClick={handleWhatsApp}
-          className="hover:text-[#25D366] transition"
-        >
-          {t("contact")}
-        </button>
-      </div>
+          <Link
+            href={`/${locale}/about`}
+            className="hover:text-brand-primary transition"
+          >
+            {t("about")}
+          </Link>
 
-      {/* RIGHT SIDE */}
-      <div className="flex items-center gap-4">
-        {/* CTA */}
-        <Link
-          href={`/${locale}/services`}
-          className="hidden md:inline-block bg-brand-accent text-white px-5 py-2 rounded-full font-semibold shadow-sm hover:shadow-md hover:scale-105 transition"
-        >
-          {t("cta")}
-        </Link>
+          <button
+            onClick={handleWhatsApp}
+            className="hover:text-[#25D366] transition"
+          >
+            {t("contact")}
+          </button>
+        </div>
 
-        {/* LANGUAGE */}
-        <button
-          onClick={toggleLanguage}
-          className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all font-bold text-brand-dark border border-brand-primary/20"
-        >
-          <span className="text-sm">{locale === "es" ? "ES" : "EN"}</span>
-        </button>
-      </div>
-    </nav>
+        {/* RIGHT SIDE */}
+        <div className="flex items-center gap-3 z-50">
+          {/* CTA DESKTOP */}
+          <button
+            onClick={handleCalendly}
+            className="hidden md:inline-block bg-brand-accent text-white px-5 py-2 rounded-full font-semibold shadow-sm hover:shadow-md hover:scale-105 transition"
+          >
+            {t("cta")}
+          </button>
+
+          {/* LANGUAGE */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all font-bold text-brand-dark border border-brand-primary/20"
+          >
+            <span className="text-sm">{locale === "es" ? "ES" : "EN"}</span>
+          </button>
+
+          {/* HAMBURGER */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden relative w-10 h-10 flex items-center justify-center rounded-lg border border-brand-primary/20 hover:bg-brand-primary/10 transition"
+          >
+            <div className="relative w-4 h-4">
+              {/* LINE 1 */}
+              <span
+                className={`absolute left-0 top-0 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "rotate-45 top-1.5" : ""
+                }`}
+              />
+
+              {/* LINE 2 */}
+              <span
+                className={`absolute left-0 top-1.5 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "opacity-0" : ""
+                }`}
+              />
+
+              {/* LINE 3 */}
+              <span
+                className={`absolute left-0 top-3 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "-rotate-45 top-1.5" : ""
+                }`}
+              />
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 text-xl font-semibold animate-fadeIn">
+          <Link href={`/${locale}`} onClick={() => setOpen(false)}>
+            Home
+          </Link>
+
+          <Link href={`/${locale}/services`} onClick={() => setOpen(false)}>
+            {t("services")}
+          </Link>
+
+          <Link href={`/${locale}/methodology`} onClick={() => setOpen(false)}>
+            {t("methodology")}
+          </Link>
+
+          <Link href={`/${locale}/about`} onClick={() => setOpen(false)}>
+            {t("about")}
+          </Link>
+
+          {/* CTA */}
+          <button
+            onClick={() => {
+              handleCalendly();
+              setOpen(false);
+            }}
+            className="bg-brand-primary text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition"
+          >
+            {t("cta")}
+          </button>
+
+          {/* WhatsApp */}
+          <button
+            onClick={() => {
+              handleWhatsApp();
+              setOpen(false);
+            }}
+            className="text-[#25D366] font-medium"
+          >
+            WhatsApp
+          </button>
+        </div>
+      )}
+    </>
   );
 }

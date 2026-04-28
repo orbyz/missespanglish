@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { MessageCircle } from "lucide-react";
 import { CONTACT } from "@/lib/constants/contact";
+import { openCalendly } from "@/lib/utils/navigation";
 
 export default function ServicesCTA() {
   const t = useTranslations("services.cta");
@@ -46,7 +47,10 @@ export default function ServicesCTA() {
           {/* BUTTONS */}
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             {/* PRIMARY */}
-            <button className="bg-brand-primary text-white px-8 py-4 rounded-xl text-lg font-medium shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.97] transition-all">
+            <button
+              onClick={openCalendly}
+              className="bg-brand-primary text-white px-8 py-4 rounded-xl text-lg font-medium shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer"
+            >
               {t("primary")}
             </button>
 
