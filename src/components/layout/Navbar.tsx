@@ -90,37 +90,40 @@ export default function Navbar() {
           </button>
 
           {/* LANGUAGE */}
-          <button
-            onClick={toggleLanguage}
-            className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all font-bold text-brand-dark border border-brand-primary/20"
-          >
-            <span className="text-sm">{locale === "es" ? "ES" : "EN"}</span>
-          </button>
+          {!open && (
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-brand-primary/20 transition-all font-bold text-brand-dark"
+            >
+              <span className="text-sm">{locale === "es" ? "ES" : "EN"}</span>
+            </button>
+          )}
 
           {/* HAMBURGER */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden relative w-10 h-10 flex items-center justify-center rounded-lg border border-brand-primary/20 hover:bg-brand-primary/10 transition"
           >
-            <div className="relative w-4 h-4">
+            {/* ICON CONTAINER */}
+            <div className="relative w-5 h-5 flex items-center justify-center">
               {/* LINE 1 */}
               <span
-                className={`absolute left-0 top-0 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
-                  open ? "rotate-45 top-1.5" : ""
+                className={`absolute w-5 h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "rotate-45" : "-translate-y-1.5"
                 }`}
               />
 
               {/* LINE 2 */}
               <span
-                className={`absolute left-0 top-1.5 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
-                  open ? "opacity-0" : ""
+                className={`absolute w-5 h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "opacity-0" : "opacity-100"
                 }`}
               />
 
               {/* LINE 3 */}
               <span
-                className={`absolute left-0 top-3 w-full h-[1.5px] bg-brand-dark transition-all duration-300 ${
-                  open ? "-rotate-45 top-1.5" : ""
+                className={`absolute w-5 h-[1.5px] bg-brand-dark transition-all duration-300 ${
+                  open ? "-rotate-45" : "translate-y-1.5"
                 }`}
               />
             </div>
@@ -167,6 +170,17 @@ export default function Navbar() {
             className="text-[#25D366] font-medium"
           >
             WhatsApp
+          </button>
+
+          {/* LANGUAGE dentro del menú */}
+          <button
+            onClick={() => {
+              toggleLanguage();
+              setOpen(false);
+            }}
+            className="mt-6 text-sm text-brand-dark/70 border border-brand-primary/20 px-4 py-2 rounded-full"
+          >
+            {locale === "es" ? "Switch to English" : "Cambiar a Español"}
           </button>
         </div>
       )}
