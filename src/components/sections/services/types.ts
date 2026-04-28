@@ -7,3 +7,8 @@ export type Service = {
   featured?: boolean;
   badge?: string;
 };
+
+export type ServiceItem = {
+  id: string;
+  featured?: boolean;
+};
