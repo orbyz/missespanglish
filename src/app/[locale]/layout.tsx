@@ -1,10 +1,9 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "../globals.css";
-import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -19,12 +18,12 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     icons: {
-      icon: "/favicon.ico", // Esto hará que tu logo sea el favicon (el icono de la pestaña)
+      icon: "/favicon.ico",
     },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      images: ["/hero-illustration.jpeg"], // Imagen que sale al compartir por WhatsApp/RRSS
+      images: ["/hero-illustration.jpeg"],
     },
   };
 }
@@ -34,24 +33,27 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // En Next 15 es una Promesa
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
-  // Validamos que el locale sea correcto
   if (!["en", "es"].includes(locale)) {
     notFound();
   }
 
-  // Obtenemos los mensajes para el Provider
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="bg-hero-gradient">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+
+          {/* 🔥 AQUÍ VA EL MAIN */}
+          <main id="main-content" className="min-h-screen pt-20">
+            {children}
+          </main>
+
           <Footer />
         </NextIntlClientProvider>
       </body>

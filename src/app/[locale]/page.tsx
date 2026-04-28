@@ -1,15 +1,15 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import AboutMe from "@/components/AboutMe";
-import CTA from "@/components/CTA";
+import Hero from "@/components/sections/Hero";
+import Features from "@/components/sections/Features";
+import AboutMe from "@/components/sections/AboutMe";
+import CTA from "@/components/sections/CTA";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-hero-gradient">
+    <>
       <Hero />
       <Features />
       <AboutMe />
       <CTA />
-    </main>
+    </>
   );
 }
