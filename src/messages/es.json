@@ -4,11 +4,11 @@
     "description": "Clases de idiomas"
   },
   "Index": {
-    "title": "Aprende inglés y español de forma divertida",
-    "subtitle": "Clases diseñadas para niños y adolescentes",
+    "title": "Clases de inglés y español para niños que sí funcionan",
+    "subtitle": "Aprendizaje divertido, personalizado y adaptado a cada estudiante",
     "paragraph": "Clases dinámicas, interactivas y personalizadas adaptadas al nivel de cada estudiante.",
 
-    "buttonPrimary": "Reservar clase",
+    "buttonPrimary": "Reservar clase gratuita",
     "buttonSecondary": "Ver cómo funciona",
 
     "buttonTrial": "Clase gratuita",
@@ -30,11 +30,12 @@
     "aboutText2": "Mi objetivo es que los niños aprendan sin miedo y disfruten el proceso.",
     "aboutButton": "Conocer más",
 
-    "ctaTitle": "Empieza hoy mismo",
-    "ctaSubtitle": "Reserva una clase y descubre una forma divertida de aprender idiomas",
-    "ctaPrimary": "Reservar clase",
+    "ctaTitle": "Empieza hoy con una clase gratuita",
+    "ctaSubtitle": "Descubre cómo tu hijo puede aprender inglés o español de forma divertida y efectiva",
+    "ctaButton": "Reservar clase gratuita",
     "ctaWhatsapp": "Hablar por WhatsApp",
-    "ctaTrust": "Respuesta en menos de 24 horas · Sin compromiso"
+    "ctaTrust": "Respuesta en menos de 24 horas · Sin compromiso",
+    "ctaNote": "Sin compromiso • Respuesta en menos de 24h"
   },
   "about": {
     "hero": {

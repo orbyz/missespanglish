@@ -51,7 +51,7 @@ export default function Hero() {
             {/* Calendly */}
             <button
               onClick={() => window.open(CONTACT.calendly, "_blank")}
-              className="bg-brand-primary text-white px-7 py-3 rounded-xl font-semibold hover:scale-[1.05]"
+              className="bg-brand-primary text-white px-6 py-3 rounded-xl font-semibold hover:scale-[1.05]"
             >
               {t("buttonTrial")}
             </button>
@@ -59,10 +59,13 @@ export default function Hero() {
             {/* WhatsApp */}
             <button
               onClick={handleWhatsApp}
-              className="bg-[#25D366] text-white px-7 py-3 rounded-xl font-semibold hover:bg-[#1ebe5d]"
+              className="bg-[#25D366] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#1ebe5d]"
             >
               WhatsApp
             </button>
+            <p className="text-sm text-brand-dark/60 mt-3 text-center md:text-left">
+              {t("ctaNote")}
+            </p>
           </div>
         </motion.div>
 

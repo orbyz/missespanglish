@@ -13,7 +13,18 @@ export default function Features() {
   const t = useTranslations("Index");
 
   return (
-    <section className="py-20 bg-white">
+    <section className="relative py-20 overflow-hidden bg-gradient-to-b from-white to-brand-cream">
+      {/* GRID BACKGROUND */}
+      <div className="absolute inset-0 -z-10 pointer-events-none opacity-[0.2]">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
+      </div>
+
+      {/* BLOBS */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-[-60px] right-[-60px] w-[250px] h-[250px] bg-brand-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-[-80px] left-[-80px] w-[300px] h-[300px] bg-brand-accent/10 rounded-full blur-3xl" />
+      </div>
+
       <div className="max-w-7xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto">
@@ -35,7 +46,7 @@ export default function Features() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-2"
+                className="relative group bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-md hover:shadow-xl transition-all border border-white/40"
               >
                 {/* ICON */}
                 <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-brand-primary/10 text-2xl mb-6 group-hover:scale-110 transition">
