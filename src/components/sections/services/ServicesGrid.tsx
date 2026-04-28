@@ -2,12 +2,13 @@
 
 import ServiceCard from "./ServiceCard";
 import { useTranslations } from "next-intl";
+import { ServiceItem } from "./types";
 
-const services = [
+const services: ServiceItem[] = [
   { id: "personalized", featured: true },
   { id: "school-support" },
   { id: "exam-prep" },
-] as const;
+];
 
 export default function ServicesGrid() {
   const t = useTranslations("services.grid");

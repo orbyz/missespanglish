@@ -7,3 +7,5 @@ export type Service = {
   featured?: boolean;
   badge?: string;
 };
+
+export type ServiceItem = Pick<Service, "id" | "featured">;
