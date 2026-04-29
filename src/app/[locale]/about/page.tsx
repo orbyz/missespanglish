@@ -10,6 +10,7 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <AboutStory />
+      <AboutTrust />
       <AboutValues />
       <CTA />
     </>

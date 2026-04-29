@@ -39,41 +39,46 @@
   "about": {
     "hero": {
       "title": "Hi, I'm Miss Espanglish",
-      "subtitle": "A passionate teacher focused on fun language learning"
+      "subtitle": "A teacher specialized in fun and effective language learning"
     },
     "story": {
       "title": "My story",
-      "p1": "I have always believed that learning a language should be fun.",
-      "p2": "That’s why I created a method based on confidence, games and real communication."
+      "p1": "I’ve always believed that learning a language shouldn’t be boring or frustrating.",
+      "p2": "That’s why I created a method where kids learn through games, interaction, and confidence from day one."
     },
     "trust": {
       "title": "Why trust me?",
-      "t1": {
-        "title": "Experience",
-        "desc": "Years teaching kids and teenagers"
-      },
-      "t2": {
-        "title": "Methodology",
-        "desc": "Dynamic and personalized classes"
-      },
-      "t3": {
-        "title": "Results",
-        "desc": "Real improvement in confidence and level"
+      "items": {
+        "t1": {
+          "value": "2+ years",
+          "title": "Experience",
+          "desc": "Teaching kids and teenagers"
+        },
+        "t2": {
+          "value": "100%",
+          "title": "Personalized lessons",
+          "desc": "Adapted to each student’s pace"
+        },
+        "t3": {
+          "value": "Real results",
+          "title": "Visible progress",
+          "desc": "Improved confidence and level"
+        }
       }
     },
     "values": {
-      "title": "Why trust me?",
+      "title": "My teaching style",
       "v1": {
-        "title": "Experience",
-        "desc": "Years teaching kids and teenagers"
+        "title": "Learning through play",
+        "desc": "Games and activities make learning natural"
       },
       "v2": {
-        "title": "Methodology",
-        "desc": "Dynamic and personalized classes"
+        "title": "Confidence first",
+        "desc": "Students start speaking without fear from day one"
       },
       "v3": {
-        "title": "Results",
-        "desc": "Real improvement in confidence and level"
+        "title": "Dynamic classes",
+        "desc": "No boring lessons, everything is interactive"
       }
     }
   },
@@ -86,43 +91,42 @@
       "title": "How the classes work",
       "subtitle": "A clear process adapted to each student",
       "steps": {
-          "step1": {
-            "title": "We understand their level and needs",
-            "description": "Every child is different, so we start with a personalized assessment"
-          },
-          "step2": {
-            "title": "We create a tailored plan",
-            "description": "Lessons designed around their pace, goals, and learning style"
-          },
-          "step3": {
-            "title": "They learn by playing and speaking",
-            "description": "Interactive classes where they participate, have fun, and build confidence"
-          },
-          "step4": {
-            "title": "We track their progress",
-            "description": "We measure real improvement and adjust to keep them moving forward"
-          },
-          "step5": {
-            "title": "Visible results",
-            "description": "More confidence, better level, and motivation to keep learning"
-          }
+        "step1": {
+          "title": "We understand their level and needs",
+          "description": "Every child is different, so we start with a personalized assessment"
+        },
+        "step2": {
+          "title": "We create a tailored plan",
+          "description": "Lessons designed around their pace, goals, and learning style"
+        },
+        "step3": {
+          "title": "They learn by playing and speaking",
+          "description": "Interactive classes where they participate, have fun, and build confidence"
+        },
+        "step4": {
+          "title": "We track their progress",
+          "description": "We measure real improvement and adjust to keep them moving forward"
+        },
+        "step5": {
+          "title": "Visible results",
+          "description": "More confidence, better level, and motivation to keep learning"
         }
       }
+    }
+  },
+  "benefits": {
+    "title": "Real results",
+    "b1": {
+      "title": "More confidence",
+      "desc": "Students lose the fear of speaking"
     },
-    "benefits": {
-      "title": "Real results",
-      "b1": {
-        "title": "More confidence",
-        "desc": "Students lose the fear of speaking"
-      },
-      "b2": {
-        "title": "Better grades",
-        "desc": "Effective academic reinforcement"
-      },
-      "b3": {
-        "title": "Motivation",
-        "desc": "They enjoy learning languages"
-      }
+    "b2": {
+      "title": "Better grades",
+      "desc": "Effective academic reinforcement"
+    },
+    "b3": {
+      "title": "Motivation",
+      "desc": "They enjoy learning languages"
     }
   },
   "Footer": {

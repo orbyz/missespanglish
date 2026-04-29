@@ -14,12 +14,14 @@ export default function AboutValues() {
   const items = ["v1", "v2", "v3"];
 
   return (
-    <section className="py-20 bg-brand-cream">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
+        {/* TITLE */}
         <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">
           {t("title")}
         </h2>
 
+        {/* GRID */}
         <div className="mt-12 grid md:grid-cols-3 gap-8">
           {items.map((v, i) => {
             const s = styles[i];
@@ -27,7 +29,7 @@ export default function AboutValues() {
             return (
               <div
                 key={v}
-                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition"
+                className="bg-brand-cream rounded-2xl p-6 shadow-sm hover:shadow-md transition"
               >
                 <div
                   className={`w-14 h-14 flex items-center justify-center rounded-full text-xl mx-auto ${s.color}`}

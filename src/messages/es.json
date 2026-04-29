@@ -40,41 +40,46 @@
   "about": {
     "hero": {
       "title": "Hola, soy Miss Espanglish",
-      "subtitle": "Profesora apasionada por enseñar idiomas de forma divertida"
+      "subtitle": "Profesora especializada en enseñar idiomas de forma divertida y efectiva"
     },
     "story": {
       "title": "Mi historia",
-      "p1": "Desde siempre he creído que aprender un idioma debe ser una experiencia divertida.",
-      "p2": "Por eso creé un método basado en confianza, juegos y comunicación real."
+      "p1": "Siempre he creído que aprender un idioma no debería ser aburrido ni frustrante.",
+      "p2": "Por eso creé un método donde los niños aprenden jugando, participando y ganando confianza desde el primer día."
     },
     "trust": {
       "title": "¿Por qué confiar en mí?",
-      "t1": {
-        "title": "Experiencia",
-        "desc": "Años enseñando a niños y adolescentes"
-      },
-      "t2": {
-        "title": "Metodología",
-        "desc": "Clases dinámicas y personalizadas"
-      },
-      "t3": {
-        "title": "Resultados",
-        "desc": "Mejora real en confianza y nivel"
+      "items": {
+        "t1": {
+          "value": "+2 años",
+          "title": "Experiencia",
+          "desc": "Enseñando a niños y adolescentes"
+        },
+        "t2": {
+          "value": "100%",
+          "title": "Clases personalizadas",
+          "desc": "Adaptadas al ritmo de cada estudiante"
+        },
+        "t3": {
+          "value": "Resultados",
+          "title": "Visibles",
+          "desc": "Mejora en confianza y nivel"
+        }
       }
     },
     "values": {
-      "title": "¿Por qué confiar en mí?",
+      "title": "Mi forma de enseñar",
       "v1": {
-        "title": "Experiencia",
-        "desc": "Años enseñando a niños y adolescentes"
+        "title": "Aprender jugando",
+        "desc": "Uso juegos y dinámicas para que el aprendizaje sea natural"
       },
       "v2": {
-        "title": "Metodología",
-        "desc": "Clases dinámicas y personalizadas"
+        "title": "Confianza primero",
+        "desc": "El objetivo es que hablen sin miedo desde el inicio"
       },
       "v3": {
-        "title": "Resultados",
-        "desc": "Mejora real en confianza y nivel"
+        "title": "Clases dinámicas",
+        "desc": "Nada de clases aburridas, todo es interacción"
       }
     }
   },
