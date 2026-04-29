@@ -112,21 +112,21 @@
           "description": "More confidence, better level, and motivation to keep learning"
         }
       }
-    }
-  },
-  "benefits": {
-    "title": "Real results",
-    "b1": {
-      "title": "More confidence",
-      "desc": "Students lose the fear of speaking"
     },
-    "b2": {
-      "title": "Better grades",
-      "desc": "Effective academic reinforcement"
-    },
-    "b3": {
-      "title": "Motivation",
-      "desc": "They enjoy learning languages"
+    "benefits": {
+      "title": "Real results",
+      "b1": {
+        "title": "More confidence",
+        "desc": "Students lose the fear of speaking"
+      },
+      "b2": {
+        "title": "Better grades",
+        "desc": "Effective academic reinforcement"
+      },
+      "b3": {
+        "title": "Motivation",
+        "desc": "They enjoy learning languages"
+      }
     }
   },
   "Footer": {
