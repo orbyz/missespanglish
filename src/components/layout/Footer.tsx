@@ -80,7 +80,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href={`/${locale}#about`}
+                  href={`/${locale}/about`}
                   className="hover:text-brand-accent transition"
                 >
                   {t("about")}

@@ -39,9 +39,7 @@ export default function CTA() {
         </div>
 
         {/* TRUST NOTE */}
-        <p className="mt-4 text-white/70 text-sm">
-          Sin compromiso • Respuesta en menos de 24h
-        </p>
+        <p className="mt-4 text-white/70 text-sm">{t("ctaNote")}</p>
       </div>
     </section>
   );

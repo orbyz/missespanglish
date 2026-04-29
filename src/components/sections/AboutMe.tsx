@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function AboutMe() {
   const t = useTranslations("Index");
+  const locale = useLocale();
 
   return (
     <section className="relative py-24 px-6 bg-brand-cream overflow-hidden">
@@ -37,12 +39,15 @@ export default function AboutMe() {
 
           {/* CTA */}
           <div className="flex justify-center md:justify-start pt-4">
-            <button className="bg-brand-accent text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.05] active:scale-[0.96] transition-all flex items-center gap-2 cursor-pointer">
+            <Link
+              href={`/${locale}/about`}
+              className="group bg-brand-accent text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg hover:scale-[1.05] active:scale-[0.96] transition-all flex items-center gap-2"
+            >
               {t("aboutButton")}
               <span className="transition-transform group-hover:translate-x-1">
                 →
               </span>
-            </button>
+            </Link>
           </div>
         </motion.div>
 
