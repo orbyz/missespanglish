@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 Miss Espanglish — Web Platform
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-✔-blue?logo=typescript)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-✔-38B2AC?logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Miss Espanglish es una plataforma web enfocada en la enseñanza de inglés y español para niños y adolescentes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El objetivo principal de la web es:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Generar confianza en padres
+- Explicar la metodología
+- Convertir visitas en reservas (Calendly)
+- Ofrecer contacto rápido (WhatsApp)
 
-## Learn More
+🌐 **Live:** https://www.missespanglish.com
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend
+- Next.js 15 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion
 
-## Deploy on Vercel
+### Internacionalización
+- next-intl
+  - Multi idioma (ES / EN)
+  - Routing por locale (/es, /en)
+  - Contenido via JSON
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Hosting & Deployment
+
+- Vercel
+  - Deploy automático desde GitHub
+  - Edge network
+  - Optimización de performance
+
+---
+
+## 🗂️ Project Structure
+
+
+    src/
+      components/
+        sections/
+          hero/
+          services/
+          methodology/
+          about/
+        ui/
+          HeroSplit.tsx
+
+      lib/
+        constants/
+          contact.ts
+        utils/
+          whatsapp.ts
+
+      messages/
+        es.json
+        en.json
+
+    app/
+      [locale]/
+        page.tsx
+        services/
+        methodology/
+        about/
+        
+
+---
+
+## 🌍 Internationalization
+
+Se utiliza `next-intl con separación completa de contenido en archivos es.json y en.json.
+Los componentes no contienen texto hardcodeado; todo se gestiona mediante useTranslations.
+
+- es.json
+- en.json
+
+
+
+## 🧩 Core Component — HeroSplit
+
+Se desarrolló un componente reusable para los HERO:
+
+Features
+Layout dividido (texto / imagen)
+CTA primario (Calendly)
+CTA secundario (WhatsApp)
+Desacoplado de i18n
+Reutilizable en múltiples páginas
+
+## 📲 Integrations
+Calendly
+
+- Reserva de clases:
+
+- WhatsApp
+Helper
+
+## 🎨 Design Principles
+Minimalismo moderno
+Jerarquía visual clara
+Mobile-first
+Componentización
+Uso de gradientes y elementos suaves
+
+## 📈 Conversion Strategy
+Doble CTA:
+Reserva directa (Calendly)
+Contacto asistido (WhatsApp)
+Copy orientado a padres
+Flujo simple: Landing → Acción
+
+## 🧪 Development Workflow
+main → producción
+dev → integración
+feature/* → desarrollo
+
+## Flow:
+feature → dev → main → deploy (Vercel)
+
+## ⚙️ Best Practices
+Separación UI / lógica
+Componentes reutilizables
+i18n desacoplado
+Evitar hardcoding
+Uso de helpers para lógica compartida
+
+## 🚀 Future Improvements
+Testimonios
+SEO avanzado
+Analytics
+A/B testing
+Automatización post-reserva
+Sistema de leads
+
+## 💡 Key Insight
+
+Esta web no solo informa — está diseñada para convertir.
+
+## 👨‍💻 Author
+
+**Jonathan**
+
+- 🌐 Portfolio: https://orbyzstudio.dev 
+- 💼 GitHub: https://github.com/orbyz    
+- ✉️ Email: olbes.es@gmail.com  
+
+Desarrollado como parte de una estrategia digital enfocada en:
+
+UX orientado a conversión
+Arquitectura escalable
+Desarrollo moderno con Next.js
