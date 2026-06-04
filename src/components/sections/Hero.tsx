@@ -17,18 +17,18 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden py-8 md:py-10">
-      {/* 🎨 BACKGROUND GRADIENT */}
+      {/* BACKGROUND GRADIENT */}
       <div className="absolute inset-0 bg-hero-gradient -z-10" />
-      {/* 🎨 OVERLAY */}
+      {/* OVERLAY */}
       <div className="absolute inset-0 bg-white/70 -z-10" />
-      {/* 🎨 BLOBS */}
+      {/* BLOBS */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-[-80px] left-[-80px] w-[300px] h-[300px] bg-brand-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-[-100px] right-[-80px] w-[350px] h-[350px] bg-brand-accent/10 rounded-full blur-3xl" />
       </div>
-      {/* 🔥 CONTENIDO */}
+      {/* CONTENT */}
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 min-h-[90vh]">
-        {/* 🧠 TEXT */}
+        {/* TEXT */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            {/* Calendly */}
+            {/* CALENDLY */}
             <button
               onClick={() => window.open(CONTACT.calendly, "_blank")}
               className="bg-brand-primary text-white px-6 py-3 rounded-xl font-semibold hover:scale-[1.05]"
@@ -56,7 +56,7 @@ export default function Hero() {
               {t("buttonTrial")}
             </button>
 
-            {/* WhatsApp */}
+            {/* WHATSAPP */}
             <button
               onClick={handleWhatsApp}
               className="bg-[#25D366] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#1ebe5d]"
@@ -69,7 +69,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* 🎯 IMAGE */}
+        {/* IMAGE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -93,7 +93,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>{" "}
-      {/* 👈 ESTE era el div que faltaba */}
     </section>
   );
 }

@@ -50,7 +50,6 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Navbar />
 
-          {/* 🔥 AQUÍ VA EL MAIN */}
           <main id="main-content" className="min-h-screen">
             {children}
           </main>

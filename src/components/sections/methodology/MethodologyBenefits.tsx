@@ -16,7 +16,7 @@ export default function MethodologyBenefits() {
 
   return (
     <section className="relative py-20 bg-brand-cream overflow-hidden">
-      {/* 🎨 BLOBS */}
+      {/* BLOBS */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-[-60px] left-[-60px] w-[250px] h-[250px] bg-brand-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-[-80px] right-[-60px] w-[250px] h-[250px] bg-brand-accent/10 rounded-full blur-3xl" />

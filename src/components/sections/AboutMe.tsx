@@ -11,14 +11,14 @@ export default function AboutMe() {
 
   return (
     <section className="relative py-24 px-6 bg-brand-cream overflow-hidden">
-      {/* 🎨 BLOBS SUTILES */}
+      {/* BLOBS */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-[-80px] right-[-80px] w-[300px] h-[300px] bg-brand-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-[-100px] left-[-80px] w-[300px] h-[300px] bg-brand-accent/10 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        {/* 🧠 TEXT */}
+        {/* TEXT */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -51,7 +51,7 @@ export default function AboutMe() {
           </div>
         </motion.div>
 
-        {/* 🎯 IMAGE */}
+        {/* IMAGE */}
         <motion.div
           initial={{ opacity: 0, x: 30, scale: 0.95 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}

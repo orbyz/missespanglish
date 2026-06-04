@@ -28,12 +28,12 @@ export default function ServicesBenefits() {
 
               return (
                 <li key={key} className="flex gap-4 items-start group">
-                  {/* Icon */}
+                  {/* ICON */}
                   <div className="mt-1 w-8 h-8 flex items-center justify-center rounded-full bg-brand-primary/10 text-brand-primary font-bold">
                     ✓
                   </div>
 
-                  {/* Content */}
+                  {/* CONTENT */}
                   <div>
                     <h3 className="font-semibold group-hover:text-brand-primary transition">
                       {t(`${base}.title`)}

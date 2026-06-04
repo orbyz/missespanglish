@@ -29,7 +29,7 @@ export default function AboutHero() {
           <p className="text-lg text-brand-dark/70">{t("subtitle")}</p>
         </motion.div>
 
-        {/* IMAGE CON ESTILO */}
+        {/* IMAGE WITH SHAPE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

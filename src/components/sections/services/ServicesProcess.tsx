@@ -17,9 +17,9 @@ export default function ServicesProcess() {
           <p className="mt-3 text-brand-dark/70">{t("subtitle")}</p>
         </div>
 
-        {/* Timeline */}
+        {/* TIMELINE */}
         <div className="relative mt-16">
-          {/* Línea */}
+          {/* LINE */}
           <div className="hidden md:block absolute top-6 left-0 w-full h-[2px] bg-gradient-to-r from-brand-primary/20 via-brand-primary/30 to-brand-accent/20" />
 
           <div className="grid md:grid-cols-4 gap-10 relative">
@@ -40,7 +40,7 @@ export default function ServicesProcess() {
                     {i + 1}
                   </div>
 
-                  {/* Contenido */}
+                  {/* CONTENT */}
                   <div className="mt-4">
                     <h3 className="font-semibold">{t(`${base}.title`)}</h3>
                     <p className="text-sm text-brand-dark/70 mt-2">

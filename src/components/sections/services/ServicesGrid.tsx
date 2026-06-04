@@ -22,7 +22,7 @@ export default function ServicesGrid() {
           <p className="mt-3 text-brand-dark/70">{t("subtitle")}</p>
         </div>
 
-        {/* Grid */}
+        {/* GRID */}
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {services.map((s) => {
             const base = `items.${s.id}`;

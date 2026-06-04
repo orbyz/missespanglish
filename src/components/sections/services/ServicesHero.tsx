@@ -9,14 +9,14 @@ export default function ServicesHero() {
 
   return (
     <section className="relative overflow-hidden pt-20 md:pt-24 pb-20 md:pb-28 bg-brand-cream">
-      {/* 🎨 BACKGROUND BLOBS */}
+      {/* BLOBS */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-[-80px] left-[-60px] w-[280px] h-[280px] bg-brand-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-[-100px] right-[-80px] w-[320px] h-[320px] bg-brand-accent/10 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-        {/* 🧠 TEXT */}
+        {/* TEXT */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function ServicesHero() {
           </div>
         </motion.div>
 
-        {/* 🎯 IMAGE */}
+        {/* IMAGE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function ServicesHero() {
               />
             </div>
 
-            {/* Floating badge */}
+            {/* FLOATING BADGE */}
             <div className="hidden md:flex items-center gap-2 absolute -bottom-6 -right-6 bg-white rounded-xl shadow-md px-4 py-2 text-sm">
               <span className="text-brand-primary">🎯</span>
               {t("badge")}

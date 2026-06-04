@@ -20,10 +20,10 @@ export default function MethodologyHero() {
         }}
       />
 
-      {/* 🎨 OVERLAY SUAVE (MUY IMPORTANTE) */}
+      {/* OVERLAY */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white/85 via-white/40 to-transparent" />
 
-      {/* CONTENIDO */}
+      {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-6 w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

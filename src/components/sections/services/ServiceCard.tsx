@@ -21,23 +21,23 @@ export default function ServiceCard({ service }: Props) {
           : "bg-white border-gray-200 hover:shadow-md",
       )}
     >
-      {/* 🔥 Glow effect (mejorado) */}
+      {/* GLOW EFFECT */}
       {service.featured && service.badge && (
         <span className="inline-block text-xs font-semibold bg-brand-primary text-white px-3 py-1 rounded-full mb-3 shadow-sm">
           {service.badge}
         </span>
       )}
 
-      {/* 🎯 Icono */}
+      {/* ICON */}
       <div className="text-2xl mb-3">{getIcon(service.id)}</div>
 
-      {/* 🧠 Title */}
+      {/* TITLE */}
       <h3 className="text-xl font-semibold">{service.title}</h3>
 
-      {/* 📄 Description */}
+      {/* DESCRIPTION */}
       <p className="text-sm text-brand-dark/70 mt-2">{service.description}</p>
 
-      {/* ✅ Bullets */}
+      {/* BULLETS */}
       <ul className="mt-4 space-y-2">
         {service.bullets.map((b, i) => (
           <li key={i} className="text-sm flex items-start gap-2">
@@ -47,7 +47,7 @@ export default function ServiceCard({ service }: Props) {
         ))}
       </ul>
 
-      {/* 🚀 CTA */}
+      {/* CTA */}
       <button
         onClick={() => window.open(CONTACT.calendly, "_blank")}
         className={`mt-6 w-full px-6 py-3 rounded-xl font-semibold text-base shadow-md transition-all duration-300
@@ -65,7 +65,7 @@ export default function ServiceCard({ service }: Props) {
   );
 }
 
-/* 🎨 Iconos simples */
+/* SIMPLE ICONS */
 function getIcon(id: string) {
   switch (id) {
     case "personalized":
