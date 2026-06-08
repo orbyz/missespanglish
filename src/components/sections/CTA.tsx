@@ -32,7 +32,7 @@ export default function CTA() {
         <div className="mt-10 flex justify-center">
           <button
             onClick={() => window.open(CONTACT.calendly, "_blank")}
-            className="bg-white text-brand-primary px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all"
+            className="bg-white text-brand-primary px-10 py-4 cursor-pointer rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all"
           >
             {t("ctaButton")}
           </button>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { openCalendly } from "@/lib/utils/navigation";
 
 export default function ServicesHero() {
   const t = useTranslations("services.hero");
@@ -32,11 +33,14 @@ export default function ServicesHero() {
           <p className="mt-4 text-brand-dark/70 text-lg">{t("subtitle")}</p>
 
           <div className="mt-6 flex flex-wrap gap-4">
-            <button className="bg-brand-primary text-white px-6 py-3 rounded-xl shadow-sm hover:shadow-md hover:scale-[1.02] transition-all">
+            <button
+              onClick={openCalendly}
+              className="bg-brand-primary cursor-pointer  text-white px-6 py-3 rounded-xl shadow-sm hover:shadow-md hover:scale-[1.02] transition-all"
+            >
               {t("ctaPrimary")}
             </button>
 
-            <button className="border border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-50 transition">
+            <button className="border cursor-pointer border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-50 transition">
               {t("ctaSecondary")}
             </button>
           </div>
